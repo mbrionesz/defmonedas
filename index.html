@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor de Monedas</title>
+  <!-- Incluir CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Conversor de monedas Nacional</h5>
+        <div class="form-group">
+          <label for="cantidadCLP">Pesos CLP</label>
+          <input type="number" id="cantidadCLP" class="form-control" placeholder="Ingrese el monto en CLP">
+        </div>
+        <div class="form-group">
+          <label for="seleccionMoneda">Moneda a convertir:</label>
+          <select class="form-control" id="seleccionMoneda">
+            <!-- Las opciones se cargarán desde el JS -->
+          </select>
+        </div>
+        <button id="btnBuscar" class="btn btn-primary mb-3">Buscar</button>
+        <div id="resultadoConversion"></div>
+        <div class="grafica">
+        <canvas id="myChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Incluir JavaScript de Bootstrap y tu archivo JS personalizado -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
